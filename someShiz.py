@@ -45,19 +45,18 @@ def power(x, y):
 		
 print(power(2, 3))
 
-eyo = "finger"
-print(len(eyo))
-print(eyo[6]) 
-
+print ("Spelling function")
 def spell(txt):
+  if(len(txt) != 1):
     print(txt[len(txt)-1])
-    
     return spell(txt[:-1])
+  else:
+    print(txt[len(txt)-1])
+    return txt
 
-    #your code goes here
+    
     
 
-txt = input()
-spell(txt)
+spell(input())
     
 
