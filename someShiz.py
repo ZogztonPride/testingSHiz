@@ -45,7 +45,28 @@ def power(x, y):
 		
 print(power(2, 3))
 
-file = open("C:/Users/kask/Desktop/Projekter/testingPython/testingSHiz/someText.txt")
-for line in file.readlines():
+try:
+ file = open("C:/Users/kask/Desktop/Projekter/testingPython/testingSHiz/someText.txt")
+ for line in file.readlines():
   print(line)
-file.close()
+finally:
+ file.close()
+try:
+ file = open("C:/Users/kask/Desktop/Projekter/testingPython/testingSHiz/someText.txt", "a")
+ file.write("\nThis is a testbfhbfb")
+finally:
+ file.close
+ print("\n")
+try:
+ file = open("C:/Users/kask/Desktop/Projekter/testingPython/testingSHiz/someText.txt", "w")
+ msg = "sff"
+ something = file.write(msg)
+ print(something)
+finally:
+ file.close()
+print("\n")
+try:
+ with open("C:/Users/kask/Desktop/Projekter/testingPython/testingSHiz/someText.txt") as f:
+  print(f.read())
+finally:
+ f.close()

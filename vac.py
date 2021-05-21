@@ -1,0 +1,26 @@
+print("STARTING NOW")
+vacinations = []
+result = 0
+vacinations.append(0)
+vacinations.append(0)
+vacinations.append(0)
+vacinations.append(0)
+vacinations.append(0)
+vacinations.append(1)
+vacinations.append(1)
+vacinations.append(1)
+vacinations.append(1)
+vacinations.append(1)
+vacinations.append(1)
+vacinations.append(1)
+vacinations.append(1)
+vacinations.append(2)
+vacinations.append(2)
+vacinations.append(2)
+vacinations.append(2)
+vacinations.append(3)
+vacinations.append(3)
+vacinations.append(3)
+for vac in vacinations:
+    result += vac
+print(result/2)
