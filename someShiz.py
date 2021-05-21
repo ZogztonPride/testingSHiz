@@ -45,18 +45,7 @@ def power(x, y):
 		
 print(power(2, 3))
 
-print ("Spelling function")
-def spell(txt):
-  if(len(txt) != 1):
-    print(txt[len(txt)-1])
-    return spell(txt[:-1])
-  else:
-    print(txt[len(txt)-1])
-    return txt
-
-    
-    
-
-spell(input())
-    
-
+file = open("C:/Users/kask/Desktop/Projekter/testingPython/testingSHiz/someText.txt")
+for line in file.readlines():
+  print(line)
+file.close()
