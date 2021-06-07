@@ -1,6 +1,4 @@
 class Enemy:
-  name = ""
-  lives = 0
   def __init__(self, name, lives):
     self.name = name
     self.lives = lives
